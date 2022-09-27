@@ -7,4 +7,9 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   model: any = {};
+  ready = false;
+
+  constructor() {
+    setTimeout(() => (this.ready = true), 100);
+  }
 }

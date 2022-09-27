@@ -1,5 +1,15 @@
+<p>
+  In this sample we have a custom element with a form inside and the goal is to
+  expose this NgForm so that we can use on the content trascluded as if it was
+  inside an original form tag.
+</p>
+<p>Goals:</p>
+<ul>
+  <li>NgModel should be register automatically on NgForm</li>
+  <li>Allow the use of NgModelGroup</li>
+</ul>
 <my-form>
-  <div *ngIf="true" ngModelGroup="group">
+  <div>
     aaa: <input type="text" name="aaa" [(ngModel)]="model.aaa" required />
     <br /><br />
     bbb: <input type="text" name="bbb" [(ngModel)]="model.bbb" required />

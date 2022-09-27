@@ -6,7 +6,7 @@ import { ControlContainer, NgForm } from '@angular/forms';
   template: `
     <form #f="ngForm">
       <ng-content></ng-content> 
-      <pre>{{ f.value | json }}</pre>
+      <pre> Value {{ f.value | json }}</pre>
       <pre> Status: {{ f.status }}</pre>
       <pre> Submitted: {{ f.submitted }}</pre>
       <input type="submit" value="Submit" />
